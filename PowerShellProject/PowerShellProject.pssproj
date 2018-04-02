@@ -25,9 +25,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Data\Sitecore82u6\" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="PowerShellProject.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Sitecore82u6\ConfigEnableDisableSitecore82Update6.csv" />
+    <Content Include="Data\Sitecore82u6\ConfigEnableDisableSitecore82Update6.xlsx" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
